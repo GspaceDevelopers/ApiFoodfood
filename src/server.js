@@ -1,3 +1,3 @@
 import App from './index'
-const PORT = prossess.env.PORT
-App.listen(3333 || PORT);
+const PORT = process.env.PORT
+App.listen(PORT || 3333);
