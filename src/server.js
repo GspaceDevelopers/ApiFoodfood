@@ -1,3 +1,3 @@
 import App from './index'
-
-App.listen(3333);
+const PORT = prossess.env.PORT
+App.listen(3333 || PORT);
