@@ -46,12 +46,12 @@ class Cardapiocontroller {
     }
     async get(req, res) {
         const { id } = req.query
-        const list = await Cardapio.findOne({ id: id })
+        const list = await Cardapio.find({ id: id })
         res.json(list)
     }
     async get2(req, res) {
         const { nomerestaurante } = req.query
-        const list = await Cardapio.findOne({ nomerestaurante: nomerestaurante })
+        const list = await Cardapio.find({ nomerestaurante: nomerestaurante })
         res.json(list)
     }
 
